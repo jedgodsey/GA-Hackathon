@@ -1,6 +1,7 @@
 import React from 'react';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import Navbar from './components/Navbar';
 
 class App extends React.Component {
   state = {
@@ -14,8 +15,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-      <h1>App.js</h1>
-      {this.state.view ? <Dashboard toggleView={this.toggleView} /> : <Login toggleView={this.toggleView} />}
+        <Navbar toggleView={this.toggleView} />
+        <h1>App.js</h1>
+        {this.state.view ? <Dashboard toggleView={this.toggleView} /> : <Login toggleView={this.toggleView} />}
       </div>
       );
     }
