@@ -1,11 +1,14 @@
 import React from 'react';
 
 class Scoreboard extends React.Component {
+  
   render() {
+    console.log(this.props.score)
     return(
-      <>
-        <h1>Scoreboard</h1>
-      </>
+      <div>
+        <h1>Scorard</h1>
+        <h2>Score: {this.props.score}</h2>
+      </div>
     )
   }
 }

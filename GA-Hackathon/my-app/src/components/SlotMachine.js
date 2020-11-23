@@ -1,4 +1,5 @@
 import React from 'react';
+import Scoreboard from './Scoreboard';
 
 class SlotMachine extends React.Component {
   state = {
@@ -23,6 +24,7 @@ class SlotMachine extends React.Component {
   render() {
     return(
       <>
+        <Scoreboard score={this.state.score} />
         <h1>Slot Machine</h1>
         {this.state.task}
         <button onClick={this.selector}>give me a task</button>
