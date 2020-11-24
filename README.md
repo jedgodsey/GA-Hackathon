@@ -23,6 +23,6 @@
 
 #### What is the user-experience like?
 
-##### When the user arrives on the landing page they will be prompted to log-in. The user will be taken to the home page where they click assigned a task to complete. The accepted task goes to a pending scoreboard in the 'dashboard' or profile page. 
+##### When the user arrives on the landing page they will be prompted to log-in. The user will be taken to the home page where they can be assigned a task to complete. The accepted task goes to a pending scoreboard in the 'dashboard' or profile page. The user gains 1 point after completing each task.
 
 
