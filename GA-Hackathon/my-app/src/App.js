@@ -16,7 +16,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar toggleView={this.toggleView} />
-        <h1>App.js</h1>
         {this.state.view ? <Dashboard toggleView={this.toggleView} /> : <Login toggleView={this.toggleView} />}
       </div>
       );

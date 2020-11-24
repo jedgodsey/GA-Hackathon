@@ -4,20 +4,37 @@ import SlotMachine from './SlotMachine';
 
 class Dashboard extends React.Component {
   state = {
-    view: false
+    view: false,
+    score: 0,
+    options: ['option 1', 'option 2', 'option 3', 'option 4'],
+    task: '',
+    pending: []
+  }
+
+  onTaskComplete = () => {
+    this.setState({score: this.state.score + 1})
+  }
+  
+  selector = () => {
+    let selection = this.state.options[Math.floor(Math.random() * this.state.options.length)]
+    let newPending = this.state.pending.concat(selection);
+    let newOptions = this.state.options.filter(item => item !== selection)
+    this.setState({
+      task: selection,
+      options: newOptions,
+      pending: newPending
+    })
+    return selection;
   }
   toggleView = (event) => {
     event.preventDefault();
     this.setState({view: !this.state.view})
-    console.log(!this.state)
   }
   render() {
     return(
       <>
-        <h1>Dasbhoard Component</h1>
-        {/* <Leaderboard /> */}
-        {this.state.view ? <Scoreboard /> : <SlotMachine />}
-        <button onClick={this.toggleView}>View Scoreboard</button>
+        {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} />}
+        <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'View Your Status'}</button>
       </>
     )
   }
