@@ -1,12 +1,13 @@
 import React from 'react';
 import Scoreboard from './Scoreboard';
 import SlotMachine from './SlotMachine';
+import DummyHolder from './DummyHolder';
 
 class Dashboard extends React.Component {
   state = {
     view: false,
     score: 0,
-    options: ['option 1', 'option 2', 'option 3', 'option 4'],
+    options: ['go for a run!', 'vacuum the living room', 'write a blog post', 'clean the fridge'],
     task: '',
     pending: [],
     completed:[]
@@ -24,7 +25,8 @@ class Dashboard extends React.Component {
   }
   
   selector = () => {
-    let selection = this.state.options[Math.floor(Math.random() * this.state.options.length)]
+    // let selection = this.state.options[Math.floor(Math.random() * this.state.options.length)]
+    let selection = this.state.options[0]
     let newPending = this.state.pending.concat(selection);
     let newOptions = this.state.options.filter(item => item !== selection)
     this.setState({
@@ -41,8 +43,9 @@ class Dashboard extends React.Component {
   render() {
     return(
       <>
-        {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} options={this.state.options} />}
-        <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'View Your Status'}</button>
+        {this.state.view ? <DummyHolder toggleView={this.toggleView} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} toggleView={this.toggleView} task={this.state.task} options={this.state.options} view={this.state.view} />}
+        {/* {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} options={this.state.options} />} */}
+        {/* <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'go to dashboard'}</button> */}
       </>
     )
   }

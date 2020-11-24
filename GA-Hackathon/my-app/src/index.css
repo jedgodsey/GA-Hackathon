@@ -1,65 +1,32 @@
 body {
+  background-color: #FFFCF3;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* scroll wheel styles */
 
-.scrollable {
-  height: 80px;
-  width: 150px;
-  margin: 0 auto;
-  padding: 0;
-  background: #000;
-  overflow: hidden;
+.dummy-background {
+  background-color: #1E3D59;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.items{
-  width: 0;
-  word-break: break-all;
-  word-wrap:break-word;
-  white-space: pre-line;
+.log-in-btn {
+  background-color: #1E3D59;
+  color:white;
 }
 
-.items::before {
-  content:"1 2 3";
-  color: #ffffff;
-  font-size: 36px;
-  animation: scroll 5s infinite;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-  content:"1 2 3";
-  }
-  27.33% {
-  content:"1 2 3";
-  }
-  33.33% {
-  content:"2 3 1";
-  }
-  60.66% {
-  content:"2 3 1";
-  }
-  66.66% {
-  content:"3 1 2";
-  }
-  94.99% {
-  content:"3 1 2";
-  }
-  100% {
-  content:"1 2 3";
-  }
-}
 
 .content-right {
   border-left: 1px solid black;
@@ -70,11 +37,183 @@ code {
   align-content: center;
 }
 
-.did-it {
-  margin: 0 auto;
-}
 
 .col-6 {
   padding-top: 250px;
   padding-bottom: 250px;
+}
+
+.taskPopUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskDir {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+#task {
+  font-size: 80px;
+  color: #1E3D59;
+}
+
+.dropdown {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+  padding: 0;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #FFC13B;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+  box-shadow: #FFC13B;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+  
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.password {
+  border:none;
+  border-bottom: 2px solid #1E3D59;
+  background-color: #FFFCF3;
+  
+}
+.username {
+  background-color: #FFFCF3;
+  border:none;
+  border-bottom: 2px solid #1E3D59;
+}
+input:focus {
+  outline:none;
+}
+::placeholder{
+  
+  color: #1E3D59;
+}
+
+a.nav-link {
+  color: #1E3D59;
+  
+}
+.log-in-header {
+  color:#1E3D59;
+}
+.did-btn{
+  color: #FFFCF3;
+  background-color: #1E3D59;
+  border-radius: 15px;
+  font-size: 15px;
+  border:none;
+}
+
+/* tab styles  */
+
+.tab-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.tab {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.light-tab {
+  background-color: #418EA3;
+}
+
+.dark-tab {
+  background-color: #1E3D59;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selection-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#find-button {
+  max-height: 30px;
+  margin: 5px;
+}
+
+.did-it {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-button {
+  background-color: #1E3D59;
+  color: white;
+  max-height: 30px;
+  border-radius: 10px;
+}
+
+.teal-text {
+  color: #418EA3;
+}
+
+.teal-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.1)
 }
