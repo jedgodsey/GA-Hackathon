@@ -1,5 +1,9 @@
 ## GA-Hackathon
 
+#### Collaborators: * Jed Godsey * Onias Israel * Morgan Jaouni * Pia Malinis * Rachel Tubb * Michelle Lameh
+
+
+
 #### What is Bizzee? 
 
 
