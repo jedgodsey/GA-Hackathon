@@ -1,5 +1,7 @@
 import React from 'react';
 import Scoreboard from './Scoreboard';
+import redo from '../images/Redo_Button.svg'
+import go from '../images/Go_Button.svg'
 
 class SlotMachine extends React.Component {
 
@@ -7,13 +9,13 @@ class SlotMachine extends React.Component {
   render() {
     return(
       <>
-        <h1>Slot Machine</h1>
 {/* left column */}
         <div className="row ">
           <div className="col-6 content-left taskDir">
+            <p>find an activity</p><br />
             <div className="d-flex">
               <div className="dropdown">
-                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button className="btn btn-secondary dropdown-toggle dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   suprise me!
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -25,7 +27,7 @@ class SlotMachine extends React.Component {
                 </div>
               </div>
               <div>
-                <button className="btn btn-primary" onClick={this.props.selector}>give me a task</button>
+                <img src={go} onClick={this.props.selector}/>
               </div>
             </div>
           </div>

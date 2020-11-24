@@ -83,7 +83,56 @@ code {
 }
 
 .taskDir {
-  /* margin: 15px; */
   display: flex;
   justify-content: center;
+}
+
+
+.dropdown {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.dropdown-menu {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+  padding: 0;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #FFC13B;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+  box-shadow: #FFC13B;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
+ 
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  background-color: #FFFCF3;
+  border-color: #FFC13B;
+  color: black;
 }
