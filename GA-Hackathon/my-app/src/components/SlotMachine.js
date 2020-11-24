@@ -18,6 +18,10 @@ class SlotMachine extends React.Component {
             <a className="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
+        <div className="scrollable">
+          <div className="items">
+          </div>
+        </div>
         <div>
           {this.props.task}
         </div>
@@ -25,7 +29,7 @@ class SlotMachine extends React.Component {
           <button className="btn btn-primary" onClick={this.props.selector}>give me a task</button>
         </div>
         <div>
-          <button className="btn btn-primary" onClick={this.props.onTaskComplete}>Did it!</button>
+          {this.props.options.length > 0 ? <button className="btn btn-primary" onClick={this.props.onTaskComplete}>Did it!</button> : null}
         </div>
       </>
     )

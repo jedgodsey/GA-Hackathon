@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* scroll wheel styles */
+
+.scrollable {
+  height: 80px;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.items{
+  width: 0;
+  word-break: break-all;
+  word-wrap:break-word;
+  white-space: pre-line;
+}
+
+.items::before {
+  content:"1 2 3";
+  color: #ffffff;
+  font-size: 36px;
+  animation: scroll 5s infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+  content:"1 2 3";
+  }
+  27.33% {
+  content:"1 2 3";
+  }
+  33.33% {
+  content:"2 3 1";
+  }
+  60.66% {
+  content:"2 3 1";
+  }
+  66.66% {
+  content:"3 1 2";
+  }
+  94.99% {
+  content:"3 1 2";
+  }
+  100% {
+  content:"1 2 3";
+  }
+}
