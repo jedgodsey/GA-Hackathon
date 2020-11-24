@@ -20,6 +20,16 @@ class SlotMachine extends React.Component {
         </div>
         <div className="scrollable">
           <div className="items">
+            <div className="number">option 1</div>
+            <div className="number">option 2</div>
+            <div className="number">option 3</div>
+            <div className="number">option 4</div>
+            <div className="number">option 5</div>
+            <div className="number">option 6</div>
+            <div className="number">option 7</div>
+            <div className="number">option 8</div>
+            <div className="number">option 9</div>
+            <div className="number">option 10</div>
           </div>
         </div>
         <div>
