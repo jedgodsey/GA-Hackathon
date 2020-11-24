@@ -4,60 +4,28 @@ body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
 }
 
 code {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* scroll wheel styles */
 
-.scrollable {
-  height: 80px;
-  width: 150px;
-  margin: 0 auto;
-  padding: 0;
-  background: #000;
-  overflow: hidden;
+.dummy-background {
+  background-color: #1E3D59;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+.log-in-btn {
+  background-color: #1E3D59;
+  color:white;
 }
 
-.items{
-  width: 0;
-  word-break: break-all;
-  word-wrap:break-word;
-  white-space: pre-line;
-}
-
-.items::before {
-  content:"1 2 3";
-  color: #ffffff;
-  font-size: 36px;
-  animation: scroll 5s infinite;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-  content:"1 2 3";
-  }
-  27.33% {
-  content:"1 2 3";
-  }
-  33.33% {
-  content:"2 3 1";
-  }
-  60.66% {
-  content:"2 3 1";
-  }
-  66.66% {
-  content:"3 1 2";
-  }
-  94.99% {
-  content:"3 1 2";
-  }
-  100% {
-  content:"1 2 3";
-  }
-}
 
 .content-right {
   border-left: 1px solid black;
@@ -86,6 +54,7 @@ code {
   display: flex;
   justify-content: center;
 }
+
 
 
 .dropdown {
@@ -136,3 +105,34 @@ code {
   border-color: #FFC13B;
   color: black;
 }
+
+.password {
+  border:none;
+  border-bottom: 2px solid #1E3D59;
+  background-color: #FFFCF3;
+  
+}
+.username {
+  background-color: #FFFCF3;
+  border:none;
+  border-bottom: 2px solid #1E3D59;
+}
+input:focus {
+  outline:none;
+}
+::placeholder{
+  
+  color: #1E3D59;
+}
+
+a.nav-link {
+  color: #1E3D59;
+  
+}
+
+
+.log-in-header {
+  color:#1E3D59;
+
+}
+
