@@ -3,12 +3,12 @@ import React from 'react';
 class Scoreboard extends React.Component {
   
   render() {
-    console.log(this.props.score)
+    console.log('scoreboard props: ', this.props)
     return(
       <div>
-        <h1>Scorard</h1>
-        <h2>Score: {this.props.score}</h2>
-        <h2>Pending tasks: {this.props.pending}</h2>
+        <h1>Your Status</h1>
+        <h2>Score: {this.props.inherit.score}</h2>
+        <h2>Pending tasks: {this.props.inherit.pending}</h2>
       </div>
     )
   }
