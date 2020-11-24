@@ -8,11 +8,19 @@ class Dashboard extends React.Component {
     score: 0,
     options: ['option 1', 'option 2', 'option 3', 'option 4'],
     task: '',
-    pending: []
+    pending: [],
+    completed:[]
   }
 
   onTaskComplete = () => {
-    this.setState({score: this.state.score + 1})
+    let newCompleted = this.state.completed.concat(this.state.task);
+    let newPending = this.state.pending.filter(item => item !== this.state.task)
+    this.setState({
+      score: this.state.score + 1,
+      completed: newCompleted,
+      pending: newPending,
+      task: ''
+    })
   }
   
   selector = () => {
@@ -33,7 +41,7 @@ class Dashboard extends React.Component {
   render() {
     return(
       <>
-        {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} />}
+        {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} options={this.state.options} />}
         <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'View Your Status'}</button>
       </>
     )

@@ -9,6 +9,7 @@ class Scoreboard extends React.Component {
         <h1>Your Status</h1>
         <h2>Score: {this.props.inherit.score}</h2>
         <h2>Pending tasks: {this.props.inherit.pending}</h2>
+        <h2>Completed tasks: {this.props.inherit.completed}</h2>
       </div>
     )
   }
