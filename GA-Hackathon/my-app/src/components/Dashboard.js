@@ -43,9 +43,9 @@ class Dashboard extends React.Component {
   render() {
     return(
       <>
-        {this.state.view ? <DummyHolder /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} options={this.state.options} />}
+        {this.state.view ? <DummyHolder toggleView={this.toggleView} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} toggleView={this.toggleView} task={this.state.task} options={this.state.options} view={this.state.view} />}
         {/* {this.state.view ? <Scoreboard inherit={this.state} /> : <SlotMachine onTaskComplete={this.onTaskComplete} selector={this.selector} task={this.state.task} options={this.state.options} />} */}
-        <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'go to dashboard'}</button>
+        {/* <button className="btn btn-primary" onClick={this.toggleView}>{this.state.view ? 'Select Another Task' : 'go to dashboard'}</button> */}
       </>
     )
   }

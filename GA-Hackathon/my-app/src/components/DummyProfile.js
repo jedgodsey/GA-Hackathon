@@ -1,11 +1,13 @@
 import profilePic from "../images/02_2_1Profile_Card.svg";
 import statsIcon from "../images/Stats_Icon.svg";
 import profileIcon from "../images/Profile_Icon.svg";
+import find from "../images/Find_an_Activity_Button.svg";
 
 const DummyProfile = (props) => {
   return(
     <>
       <div className="tab-container">
+        <img src={find} id="find-button" onClick={props.toggleView} />
         <div className="tab light-tab" onClick={props.toggleDummy}>
           <img src={statsIcon} className="tab-icon" />
         </div>

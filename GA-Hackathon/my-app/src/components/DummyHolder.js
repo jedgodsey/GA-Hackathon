@@ -15,7 +15,7 @@ class DummyHolder extends React.Component {
   render() {
     return(
       <>
-        {this.state.showProfile ? <DummyProfile toggleDummy={this.toggleDummy} /> : <DummyStats toggleDummy={this.toggleDummy} />}
+        {this.state.showProfile ? <DummyProfile toggleView={this.props.toggleView} toggleDummy={this.toggleDummy} /> : <DummyStats toggleView={this.props.toggleView} toggleDummy={this.toggleDummy} />}
       </>
     )
   }

@@ -182,3 +182,38 @@ a.nav-link {
   flex-direction: column;
   align-items: center;
 }
+
+.selection-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#find-button {
+  max-height: 30px;
+  margin: 5px;
+}
+
+.did-it {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-button {
+  background-color: #1E3D59;
+  color: white;
+  max-height: 30px;
+  border-radius: 10px;
+}
+
+.teal-text {
+  color: #418EA3;
+}
+
+.teal-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1.1)
+}
