@@ -1,10 +1,11 @@
 import React from 'react';
-import Dashboard from './Dashboard';
+import bee from '../images/bee.svg';
 
 const Login = (props) => {
   return(
     <div class="container">
-      <h1 class="log-in-header text-center mt-5 mb-5">LOGIN</h1>
+      <img src={bee} className="logo" />
+      <h1 class="log-in-header text-center mt-5 mb-5">Login to Bizzee</h1>
       <form onSubmit={props.toggleView}>
        <div class="log-in text-center mt-5">
       <input class="username" type="text" placeholder="USERNAME" />

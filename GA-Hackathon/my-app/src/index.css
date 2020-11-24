@@ -164,3 +164,14 @@ a.nav-link {
 .dark-tab {
   background-color: #1E3D59;
 }
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
