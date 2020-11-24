@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.e1f986ec.chunk.css",
+    "main.js": "/my-app/static/js/main.8770164b.chunk.js",
+    "main.js.map": "/my-app/static/js/main.8770164b.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.4c3f588d.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.4c3f588d.js.map",
+    "static/js/2.a81ec1d0.chunk.js": "/my-app/static/js/2.a81ec1d0.chunk.js",
+    "static/js/2.a81ec1d0.chunk.js.map": "/my-app/static/js/2.a81ec1d0.chunk.js.map",
+    "static/js/3.f57e4985.chunk.js": "/my-app/static/js/3.f57e4985.chunk.js",
+    "static/js/3.f57e4985.chunk.js.map": "/my-app/static/js/3.f57e4985.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "static/css/main.e1f986ec.chunk.css.map": "/my-app/static/css/main.e1f986ec.chunk.css.map",
+    "static/js/2.a81ec1d0.chunk.js.LICENSE.txt": "/my-app/static/js/2.a81ec1d0.chunk.js.LICENSE.txt",
+    "static/media/02_2_1Profile_Card.537fdba3.svg": "/my-app/static/media/02_2_1Profile_Card.537fdba3.svg",
+    "static/media/Find_an_Activity_Button.6770ea37.svg": "/my-app/static/media/Find_an_Activity_Button.6770ea37.svg",
+    "static/media/Go_Button.645550cb.svg": "/my-app/static/media/Go_Button.645550cb.svg",
+    "static/media/Profile_Icon.bac372d9.svg": "/my-app/static/media/Profile_Icon.bac372d9.svg",
+    "static/media/Redo_Button.9785f128.svg": "/my-app/static/media/Redo_Button.9785f128.svg",
+    "static/media/Start_Activity_Button.ed710082.svg": "/my-app/static/media/Start_Activity_Button.ed710082.svg",
+    "static/media/Stats_Icon.3fac5fdb.svg": "/my-app/static/media/Stats_Icon.3fac5fdb.svg",
+    "static/media/bee.96043ff7.svg": "/my-app/static/media/bee.96043ff7.svg",
+    "static/media/statsPic.45e9d8a8.svg": "/my-app/static/media/statsPic.45e9d8a8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c3f588d.js",
+    "static/js/2.a81ec1d0.chunk.js",
+    "static/css/main.e1f986ec.chunk.css",
+    "static/js/main.8770164b.chunk.js"
+  ]
+}
