@@ -32,7 +32,7 @@
 
 ![Screen Shot 2020-11-24 at 3 35 52 PM](https://user-images.githubusercontent.com/73499055/100154183-cf0bcc00-2e6a-11eb-895b-c01114c7e945.png)
 
-##### Users can view thier accepted/current task goes to a pending scoreboard in the 'dashboard' or profile page. The user gains 1 point after completing each task.
+##### Users can view thier accepted/current task goes to a pending scoreboard in the 'dashboard' or profile page. The user gains 1 point after completing each task. Users will be able to view their progress and medals and accolades they have recieved for completing their various tasks.
 
 ![Screen Shot 2020-11-24 at 3 37 10 PM](https://user-images.githubusercontent.com/73499055/100154404-20b45680-2e6b-11eb-9a81-3140d68414da.png)
 
