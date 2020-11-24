@@ -1,6 +1,19 @@
 ## GA-Hackathon
 
-#### Collaborators: * Jed Godsey * Onias Israel * Morgan Jaouni * Pia Malinis * Rachel Tubb * Michelle Lameh
+#### Collaborators:
+* Jed Godsey 
+* Onias Israel 
+* Morgan Jaouni 
+* Pia Malinis 
+* Rachel Tubb 
+* Michelle Lameh
+
+
+#### Technologies Used:
+* React.js
+* CSS
+* BootStrap
+* HTML
 
 
 
