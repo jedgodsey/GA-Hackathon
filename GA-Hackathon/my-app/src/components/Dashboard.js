@@ -1,14 +1,23 @@
 import React from 'react';
-import Leaderboard from './Leaderboard';
+import Scoreboard from './Scoreboard';
 import SlotMachine from './SlotMachine';
 
 class Dashboard extends React.Component {
+  state = {
+    view: false
+  }
+  toggleView = (event) => {
+    event.preventDefault();
+    this.setState({view: !this.state.view})
+    console.log(!this.state)
+  }
   render() {
     return(
       <>
         <h1>Dasbhoard Component</h1>
-        <Leaderboard />
-        <SlotMachine />
+        {/* <Leaderboard /> */}
+        {this.state.view ? <Scoreboard /> : <SlotMachine />}
+        <button onClick={this.toggleView}>View Scoreboard</button>
       </>
     )
   }
