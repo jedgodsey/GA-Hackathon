@@ -9,4 +9,12 @@ code {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* scroll wheel styles */
+.dummy-background {
+  background-color: #1E3D59;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
