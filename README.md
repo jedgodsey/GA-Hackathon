@@ -23,14 +23,16 @@
 
 #### What is the user-experience like?
 
-##### When the user arrives on the landing page they will be prompted to log-in. The user will be taken to the home page where they can be assigned a task to complete. The accepted task goes to a pending scoreboard in the 'dashboard' or profile page. The user gains 1 point after completing each task.
+##### When the user arrives on the landing page they will be prompted to log-in.
 
 
 ![Screen Shot 2020-11-24 at 3 37 28 PM](https://user-images.githubusercontent.com/73499055/100154354-0b3f2c80-2e6b-11eb-970a-254f69fe8e12.png)
 
+##### The user will be taken to the home page where they can recieve, start and get new tasks to complete. The user will be able to access their personal dashboard and logout from the home page. 
+
 ![Screen Shot 2020-11-24 at 3 35 52 PM](https://user-images.githubusercontent.com/73499055/100154183-cf0bcc00-2e6a-11eb-895b-c01114c7e945.png)
 
-![Screen Shot 2020-11-24 at 3 37 10 PM](https://user-images.githubusercontent.com/73499055/100154404-20b45680-2e6b-11eb-9a81-3140d68414da.png)
+##### The accepted task goes to a pending scoreboard in the 'dashboard' or profile page. The user gains 1 point after completing each task.
 
-![Screen Shot 2020-11-24 at 3 45 36 PM](https://user-images.githubusercontent.com/73499055/100154999-1e9ec780-2e6c-11eb-8f73-2da68d45d2d6.png)
+![Screen Shot 2020-11-24 at 3 37 10 PM](https://user-images.githubusercontent.com/73499055/100154404-20b45680-2e6b-11eb-9a81-3140d68414da.png)
 
