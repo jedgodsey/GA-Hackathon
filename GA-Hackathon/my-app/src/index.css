@@ -60,3 +60,21 @@ code {
   content:"1 2 3";
   }
 }
+
+.content-right {
+  border-left: 1px solid black;
+  align-content: center;
+}
+
+.content-left {
+  align-content: center;
+}
+
+.did-it {
+  margin: 0 auto;
+}
+
+.col-6 {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
