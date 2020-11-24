@@ -1,4 +1,5 @@
 body {
+  background-color: #FFFCF3;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -77,4 +78,15 @@ code {
 .col-6 {
   padding-top: 250px;
   padding-bottom: 250px;
+}
+
+.taskPopUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskDir {
+  /* margin: 15px; */
+  display: flex;
+  justify-content: center;
 }

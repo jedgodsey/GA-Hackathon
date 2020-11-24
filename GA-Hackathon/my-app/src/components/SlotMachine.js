@@ -8,9 +8,10 @@ class SlotMachine extends React.Component {
     return(
       <>
         <h1>Slot Machine</h1>
+{/* left column */}
         <div className="row ">
-          <div className="col-6 content-left">
-            <div className="">
+          <div className="col-6 content-left taskDir">
+            <div className="d-flex">
               <div className="dropdown">
                 <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   suprise me!
@@ -28,18 +29,15 @@ class SlotMachine extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-6 content-right">
-            <div className="">
-                <div className="scrollable">
-                  <div className="items">
-                  </div>
-                </div>
+{/* right column */}
+          <div className="col-6 content-right taskDir">
+            <div className="d-flex taskPopUp">
                 <div>
                   {this.props.task}
                 </div>
-                <div className="did-it">
+                <div>
                   {this.props.options.length > 0 ? <button className="btn btn-primary" onClick={this.props.onTaskComplete}>Did it!</button> : null}
-              </div>
+                </div>
             </div>
           </div>
         </div>
