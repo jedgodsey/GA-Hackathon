@@ -37,9 +37,6 @@ code {
   align-content: center;
 }
 
-.did-it {
-  margin: 0 auto;
-}
 
 .col-6 {
   padding-top: 250px;
@@ -54,6 +51,12 @@ code {
 .taskDir {
   display: flex;
   justify-content: center;
+  font-weight: 700;
+}
+
+#task {
+  font-size: 80px;
+  color: #1E3D59;
 }
 
 .dropdown {
@@ -102,7 +105,7 @@ code {
   background-color: #FFFCF3;
   border-color: #FFC13B;
   color: black;
- 
+  
 }
 
 .btn-secondary.focus, .btn-secondary:focus {
@@ -134,10 +137,17 @@ a.nav-link {
   color: #1E3D59;
   
 }
-
-
 .log-in-header {
   color:#1E3D59;
-
+}
+.did-btn{
+  color: #FFFCF3;
+  background-color: #1E3D59;
+  border-radius: 15px;
+  font-size: 15px;
+  border:none;
 }
 
+.did-it {
+  margin: 0 auto;
+}
